@@ -50,6 +50,20 @@ pip install -e .
 cd external/dlimp
 pip install -e .
 ```
+
+## 📋 Configuration
+
+Before starting training or inference, you need to configure paths to models and data. See the detailed guide:
+
+📖 **[CONFIGURATION.md](CONFIGURATION.md)** - Complete configuration guide in English
+📖 **[KONFIGURACJA.md](KONFIGURACJA.md)** - Kompletny przewodnik konfiguracji po polsku
+
+The guides include:
+- Required changes in configuration files
+- Recommended directory structure
+- Configuration examples
+- Verification of correct settings
+
 ## 🧰 Model Checkpoints
 | Model | Description | Link|
 |---------|-------|------|
@@ -226,3 +240,23 @@ Lots of code are inherited from [DynamiCrafter](https://github.com/Doubiiu/Dynam
   year         = {2025},
 }
 ```
+
+## 🧪 Testing
+
+The project includes unit tests to verify correct installation and configuration.
+
+### Running Tests
+
+```bash
+# Install test dependencies
+pip install -e ".[test]"
+
+# Run all tests
+pytest
+
+# Run tests with coverage report
+pytest --cov=unifolm_wma --cov-report=html
+```
+
+More information about testing can be found in [tests/README.md](tests/README.md).
+

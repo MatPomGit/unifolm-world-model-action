@@ -128,3 +128,27 @@ Data/Pretrained
 Data/utils.py
 Experiment/checkpoint
 Experiment/log
+
+# IDE specific files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Temporary files
+*.tmp
+.tmp/
+tmp/
+
+# Model checkpoints and training outputs (usually large)
+checkpoints/
+experiments/
+results/
+outputs/
+
+# Data directories (usually large)
+data/
+datasets/
+

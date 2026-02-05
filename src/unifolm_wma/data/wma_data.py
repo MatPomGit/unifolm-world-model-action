@@ -10,7 +10,7 @@ from torchvision import transforms
 from pathlib import Path
 
 from unifolm_wma.data.utils import load_stats
-from unifolm_wma.data.normolize import Normalize, Unnormalize
+from unifolm_wma.data.normalize import Normalize, Unnormalize
 
 
 class WMAData(Dataset):
