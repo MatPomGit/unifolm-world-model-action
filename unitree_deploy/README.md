@@ -248,7 +248,7 @@ cd z1_controller/build
 ./z1_ctrl
 ```
 
-**Co robi kontroler:** Z1_ctrl to niskopo ziomowy program, który odbiera twoje komendy wysokiego poziomu (np. "przesuń ramię do pozycji X") i przekłada je na sygnały sterujące dla silników robota.
+**Co robi kontroler:** Z1_ctrl to niskopoziomowy program, który odbiera twoje komendy wysokiego poziomu (np. "przesuń ramię do pozycji X") i przekłada je na sygnały sterujące dla silników robota.
 
 ---
 
