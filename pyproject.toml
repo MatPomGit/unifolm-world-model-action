@@ -39,7 +39,8 @@ dependencies = [
     "protobuf==3.20.3",
     "datasets==3.6.0",
     "tensorflow-graphics==2021.12.3",
-    "fairscale==0.4.13"
+    "fairscale==0.4.13",
+    "safetensors==0.4.1"
 ]
 
 [build-system]

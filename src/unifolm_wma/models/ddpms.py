@@ -42,7 +42,7 @@ from unifolm_wma.models.diffusion_head.common.lr_scheduler import get_scheduler,
 from unifolm_wma.models.diffusion_head.ema_model import EMAModel
 from unifolm_wma.models.diffusion_head.positional_embedding import SinusoidalPosEmb
 from unifolm_wma.modules.encoders.condition import MLPProjector
-from unifolm_wma.data.normolize import Normalize, Unnormalize
+from unifolm_wma.data.normalize import Normalize, Unnormalize
 
 __conditioning_keys__ = {
     'concat': 'c_concat',
