@@ -97,6 +97,19 @@ pip install -e .
 
 **Gotowe!** Twoje środowisko jest teraz skonfigurowane i gotowe do pracy.
 
+## 📋 Konfiguracja Projektu
+
+Przed rozpoczęciem treningu lub inferencji, musisz skonfigurować ścieżki do modeli i danych. Zobacz szczegółowy przewodnik:
+
+📖 **[KONFIGURACJA.md](KONFIGURACJA.md)** - Kompletny przewodnik konfiguracji po polsku
+📖 **[CONFIGURATION.md](CONFIGURATION.md)** - Complete configuration guide in English
+
+Przewodniki zawierają:
+- Wymagane zmiany w plikach konfiguracyjnych
+- Zalecaną strukturę katalogów
+- Przykłady konfiguracji
+- Weryfikację poprawności ustawień
+
 ## 🧰 Punkty Kontrolne Modelu (Model Checkpoints)
 
 **Wyjaśnienie:** Punkty kontrolne to zapisane wagi modelu po treningu. Możesz je wykorzystać bez konieczności trenowania modelu od zera, co oszczędza czas i zasoby obliczeniowe.
@@ -517,6 +530,25 @@ Jeśli używasz tego projektu w swojej pracy naukowej, prosimy o cytowanie:
   year         = {2025},
 }
 ```
+
+## 🧪 Testowanie
+
+Projekt zawiera testy jednostkowe do weryfikacji poprawności instalacji i konfiguracji.
+
+### Uruchomienie testów
+
+```bash
+# Zainstaluj zależności testowe
+pip install -e ".[test]"
+
+# Uruchom wszystkie testy
+pytest
+
+# Uruchom testy z raportem pokrycia kodu
+pytest --cov=unifolm_wma --cov-report=html
+```
+
+Więcej informacji o testach znajduje się w [tests/README.md](tests/README.md).
 
 ## 📚 Dodatkowe Zasoby dla Początkujących
 
