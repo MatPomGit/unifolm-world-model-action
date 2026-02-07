@@ -1,0 +1,56 @@
+[flake8]
+# Maximum line length
+max-line-length = 100
+
+# Ignore specific errors/warnings
+# E203: whitespace before ':' (conflicts with black)
+# W503: line break before binary operator (conflicts with black)
+# E501: line too long (handled by black)
+# F401: module imported but unused (sometimes needed for __init__.py)
+extend-ignore = E203, W503
+
+# Exclude directories
+exclude =
+    .git,
+    __pycache__,
+    .pytest_cache,
+    .mypy_cache,
+    .venv,
+    venv,
+    env,
+    build,
+    dist,
+    *.egg-info,
+    external,
+    checkpoints,
+    experiments,
+    results,
+    data,
+    datasets
+
+# Maximum complexity
+max-complexity = 15
+
+# Docstring conventions
+docstring-convention = google
+
+# Import order style
+import-order-style = google
+
+# Per-file ignores
+per-file-ignores =
+    # Don't require docstrings in test files
+    tests/*:D100,D101,D102,D103,D104
+    # Allow unused imports in __init__.py files
+    */__init__.py:F401,F403
+    # Allow long lines in config files
+    configs/*:E501
+
+# Count errors
+count = True
+
+# Show source code for errors
+show-source = True
+
+# Show statistics
+statistics = True
